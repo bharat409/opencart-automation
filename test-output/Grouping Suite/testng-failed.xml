@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Grouping Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <exclude name="negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="registerTestScenarios.TC001TC003AndTC006">
+        <methods>
+          <include name="accountregistration"/>
+        </methods>
+      </class> <!-- registerTestScenarios.TC001TC003AndTC006 -->
+      <class name="registerTestScenarios.TC005Registration">
+        <methods>
+          <include name="accountregistration" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- registerTestScenarios.TC005Registration -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Grouping Suite] -->
